@@ -37,8 +37,7 @@
         "slug": "^5.3.0",
         "sqlite3": "^5.0.8",
         "table": "^6.8.0",
-        "uuid": "^8.3.2",
-        "zipper": "E:\\Projects\\zipper"
+        "uuid": "^8.3.2"
     },
     "devDependencies": {
         "adm-zip": "^0.5.9",
