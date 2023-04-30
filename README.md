@@ -1,8 +1,8 @@
-# REST API ZH kezdőcsomag
+# Szerveroldali webprogramozás Node.js ZH kezdőcsomag
 
-Kezdőcsomag a Szerveroldali webprogramozás tárgy REST API zárthelyi feladatához.
+Kezdőcsomag a Szerveroldali webprogramozás tárgy Node.js (Sequelize, REST API, GraphQL) zárthelyi feladatához.
 
-- [REST API ZH kezdőcsomag](#rest-api-zh-kezdőcsomag)
+- [Szerveroldali webprogramozás Node.js ZH kezdőcsomag](#szerveroldali-webprogramozás-nodejs-zh-kezdőcsomag)
   - [Függőségek telepítése](#függőségek-telepítése)
   - [Kezdőcsomag parancsok](#kezdőcsomag-parancsok)
   - [Ajánlott VSCode kiegészítők](#ajánlott-vscode-kiegészítők)
@@ -23,8 +23,8 @@ Miután telepítetted az NPM-es csomagokat, az alábbi parancsok érhetők el a 
 
 - `npm run db`: Migrációk és a seeder futtatása nulláról (tiszta adatbázis)
 - `npm run dev`: Szerver futtatása (fejlesztői)
-- `npm run test`: Automata tesztelő futtatása
-- `npm run test 1 2`: Automata tesztelő futtatása konkrét feladat(ok)ra a feladatok sorszáma alapján (pl. itt az 1. és a 2. feladatra)
+- `npm run test`: Automata tesztelő futtatása minden feladatra
+- `npm run test 3 4`: Automata tesztelő futtatása konkrét feladat(ok)ra a feladatok sorszáma alapján (pl. itt a 3. és 4. feladatra)
 - `npm run zip`: ZH becsomagolása (automatikus nyilatkozat ellenőrzéssel és kitöltéssel)
 - `npm run prettier`: A projektben lévő összes `.js` és `.json` fájl formázása Prettier-el
 
@@ -57,7 +57,7 @@ A kezdőcsomagban alapból csak egy üres tesztelő van. A konkrét zárthelyi f
 
 Ez alapvetően két fájlt jelent:
 - `inject.js`
-  - A kezdőcsomag használja szerveroldalon, annak érdekében, hogy a tesztelő megfelelően el tudja indítani a teszt szervert és a kliens oldali tesztelést is hatékonyan elvégezhesse. Ez eltérő megoldásokat jelenthet REST API-nál, GraphQL-nél vagy Websocket-nál.
+  - A kezdőcsomag használja szerveroldalon, annak érdekében, hogy a tesztelő megfelelően el tudja indítani a teszt szervert és a kliensoldali tesztelést is hatékonyan elvégezhesse.
 - `tester.js`
   - Maga a tesztelő
 
@@ -68,7 +68,7 @@ Ha zárthelyi közben valamiért módosítjuk és újra kiadjuk a tesztelőt, mo
 Az alábbiakat vedd figyelembe a tesztelő használatakor:
 
 - A tesztelő által adott eredmények csak tájékoztató jellegűek, melyektől a végleges értékelés pozitív és negatív irányba is eltérhet.
-- **Nem az a feladat, hogy addig futtasd a tesztelőt, amíg minden át nem megy, hanem az, hogy a dolgozatot oldd meg a legjobb tudásod szerint! Ehhez a tesztelő csak egy segédlet, ami lehetőség szerint egy gyors visszajelzést ad a munkádról azáltal, hogy leteszteli a főbb eseteket, és ha azokon átmegy, akkor *valószínűleg* jó.**
+- **Nem az a feladat, hogy addig futtasd a tesztelőt, amíg minden át nem megy, hanem az, hogy a dolgozatot oldd meg a legjobb tudásod szerint! Ehhez a tesztelő csak egy segédlet, ami lehetőség szerint egy gyors visszajelzést ad a munkádról azáltal, hogy leteszteli a FŐBB eseteket, és ha azokon átmegy, akkor *valószínűleg* jó.**
 - A tesztelőt igyekeztünk legjobb tudásunk és szándékunk szerint összeállítani, ennek ellenére elképzelhető, hogy egy hallgatónál valamilyen előre nem látott hiba miatt abszolút nem fut a tesztelő, vagy egyes részfeladatokat hibásan tesztel.
   - Ilyenkor megköszönjük, ha ezt jelzitek felénk, mivel így a jövőben elkerülhetővé tudunk tenni egy hibalehetőséget, illetve még a zh közben megpróbáljuk kijavítani a hibát is.
   - Fontos, ha ilyen történik, ne essetek kétségbe, hanem nyugodtan folytassátok a dolgozatot, hiszen azt az automata tesztelő nélkül, a gyakorlatokon tanult eszközökkel is meg kell tudni oldani! A feladat időkeretét is úgy szabjuk meg, hogy ebben az esetben is kényelmesen be lehet fejezni.

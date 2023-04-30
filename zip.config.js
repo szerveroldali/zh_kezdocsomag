@@ -1,6 +1,6 @@
 module.exports = {
     subject: "Szerveroldali webprogramozás",
-    task: "REST API ZH",
+    task: "Node.js (Sequelize, REST API, GraphQL) évfolyam ZH",
     ignore: [
         ".git/**",
         ".idea/**",
