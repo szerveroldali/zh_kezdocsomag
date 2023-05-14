@@ -1,7 +1,7 @@
 {
     "name": "nodejs_zh",
-    "version": "1.4.1",
-    "description": "Kezdőcsomag a Node.JS zárthelyihez",
+    "version": "1.4.2",
+    "description": "Kezdőcsomag a Node.js zárthelyihez",
     "author": "Tóta Dávid",
     "license": "MIT",
     "scripts": {
