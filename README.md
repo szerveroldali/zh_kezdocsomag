@@ -49,7 +49,7 @@ Akkor ha elmentesz egy fájlt a VSCode-ban, a Prettier automatikusan meghívásr
 
 A zárthelyihez automata tesztelőt biztosítunk, ami segít gyors visszajelzést adni a munkádról.
 
-![Tesztelő](https://imgur.com/7nJ6XvT.png)
+![Tesztelő](https://i.imgur.com/nECFXmg.png)
 
 ### Tesztelő telepítése a zárthelyi elején
 
@@ -80,7 +80,7 @@ A zárthelyihez automatikus zippelőt biztosítunk, ami segít gyorsan és megfe
 
 A program először ellenőrzi, hogy létezik-e már szabályosan kitöltött `statement.txt`. Ha nem, akkor felkínálja a nyilatkozatot elfogadásra, majd segít azt kitölteni. Ha a nyilatkozatfájl érvényes, akkor ezt a részt onnantól átugorja. Végül becsomagolja a fájlokat:
 
-![Zipper](https://i.imgur.com/5cSvMRS.png)
+![Zipper](https://i.imgur.com/9fRUsQM.png)
 
 Az alábbiakat vedd figyelembe a zippelő használatakor, illetve a beadásnál:
 
