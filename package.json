@@ -14,7 +14,7 @@
         "prettier": "npx prettier --write \"**/*.{js,mjs,json,gql}\""
     },
     "dependencies": {
-        "@faker-js/faker": "^7.6.0",
+        "@faker-js/faker": "^8.0.0",
         "@fastify/autoload": "^5.7.1",
         "@fastify/jwt": "^6.7.1",
         "@graphql-tools/schema": "^9.0.19",
