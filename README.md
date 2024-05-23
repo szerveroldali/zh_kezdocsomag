@@ -53,15 +53,13 @@ A zárthelyihez automata tesztelőt biztosítunk, ami segít gyors visszajelzés
 
 ### Tesztelő telepítése a zárthelyi elején
 
-A kezdőcsomagban alapból csak egy üres tesztelő van. A konkrét zárthelyi feladathoz tartozó tesztelőt a kezdés időpontjában osztjuk meg. A tartalmát be kell másolni a kezdőcsomag `test` mappájába, felülírva az ott lévő fájlokat.
+A kezdőcsomagban alapból csak egy üres tesztelő van. A konkrét zárthelyi feladathoz tartozó tesztelőt a kezdés időpontjában osztjuk meg hálózaton, és automatikusan felülírja a `test` mappában lévő releváns állományokat.
 
 Ez alapvetően két fájlt jelent:
 - `inject.js`
   - A kezdőcsomag használja szerveroldalon, annak érdekében, hogy a tesztelő megfelelően el tudja indítani a teszt szervert és a kliensoldali tesztelést is hatékonyan elvégezhesse.
 - `tester.js`
-  - Maga a tesztelő
-
-Ha zárthelyi közben valamiért módosítjuk és újra kiadjuk a tesztelőt, mondjuk egy időközben javított hiba miatt, akkor ugyanígy felül kell írni ismét.
+  - Maga a tesztelő.
 
 ### Fontos tudnivalók
 
