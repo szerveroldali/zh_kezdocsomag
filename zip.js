@@ -128,7 +128,7 @@ const checkZip = async (zippedFiles, zipPath) => {
         const parsed = path.parse(file);
         const originalFileContentBuffer = await fs.readFile(file);
         const originalChecksum = checksum(originalFileContentBuffer);
-        const zippedFileContentBuffer = zipFile.getEntry(file.replace(/\\/g, "/")).getData();
+        const zippedFileContentBuffer = zipFile.getEntry(file).getData();
         const zippedChecksum = checksum(zippedFileContentBuffer);
         const checksumMatch = originalChecksum === zippedChecksum;
         if (!checksumMatch)
